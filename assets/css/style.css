@@ -40,7 +40,7 @@ i,
 span,
 a {
   display: inline-block;
-  transition: all linear 0.3s;
+  transition: all linear 0.1s;
 }
 
 h1,
@@ -283,7 +283,7 @@ p {
 .offcanvas_menu_wrapper {
   width: 290px;
   position: fixed;
-  background: #fff;
+  background: rgb(11, 18, 47);
   z-index: 9999;
   top: 0;
   height: 100%;
@@ -8209,7 +8209,7 @@ blockquote cite {
   border-radius: 15px;
 }
 .footer-brand-logo {
-  width: 50%;
+  width: 30%;
 }
 .hr-line {
   width: 30%;
@@ -8233,4 +8233,35 @@ blockquote cite {
   .second-part {
     padding-top: 20px;
   }
+}
+.app-download-img {
+  width: 70%;
+  transition: transform 0.2s;
+}
+.app-download-img:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .app-download-img {
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .down-button {
+    left: 50px;
+  }
+}
+.bg-overlay {
+  background-color: rgba(20, 30, 58, 0.85);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.founder-img {
+  border-radius: 20px;
 }
