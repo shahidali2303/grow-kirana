@@ -995,7 +995,7 @@ p {
 .header-nav-box.header-nav-4-box .appie-btn-box ul li a {
   font-size: 18px;
   color: #0e1133;
-  margin-left: 15px;
+  margin-left: -5px;
 }
 .header-nav-box.header-nav-4-box .appie-btn-box ul li a.cart-btn {
   position: relative;
@@ -8265,3 +8265,8 @@ blockquote cite {
 .founder-img {
   border-radius: 20px;
 }
+/* @media only screen and (min-width: 319px) and (max-width: 375px) {
+  .down-button {
+    padding-right: 50px;
+  }
+} */
