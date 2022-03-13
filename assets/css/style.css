@@ -8265,8 +8265,23 @@ blockquote cite {
 .founder-img {
   border-radius: 20px;
 }
-/* @media only screen and (min-width: 319px) and (max-width: 375px) {
-  .down-button {
-    padding-right: 50px;
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  #img-tech {
+    padding-left: 76px;
   }
-} */
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  #img-tech {
+    padding-left: 40px;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  #img-tech {
+    padding-left: 85px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #img-tech {
+    padding-left: 240px;
+  }
+}
