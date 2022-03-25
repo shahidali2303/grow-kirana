@@ -97,7 +97,7 @@
                     <a href="#" style="color: white">Team</a>
                   </li>
                   <li class="menu-item-has-children active">
-                    <a href="#review" style="color: white">Review</a>
+                    <a href="#review" style="color: white">testimonials</a>
                   </li>
 
                   <li class="menu-item-has-children active">
@@ -147,7 +147,7 @@
                     <a href="#team">Team </a>
                   </li>
                   <li>
-                    <a href="#review">Review </a>
+                    <a href="#review">Testimonials </a>
                   </li>
                   <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -950,29 +950,34 @@
               <p>
                 We are waiting for you to make us a part your stock management.
               </p>
-              <form action="#" method="post" class="row">
+              <form
+                method="POST"
+                name="contactform"
+                id="contactform"
+                class="row"
+              >
                 <div class="col-md-6">
                   <input
                     type="text"
-                    name="f-name"
+                    name="FirstName"
                     placeholder="First Name"
                     required
                   />
                 </div>
                 <div class="col-md-6">
-                  <input type="text" name="l-name" placeholder="Last Name" />
+                  <input type="text" name="LastName" placeholder="Last Name" />
                 </div>
                 <div class="col-md-6">
                   <input
                     type="email"
-                    name="email"
+                    name="Email"
                     placeholder="Email Address"
                   />
                 </div>
                 <div class="col-md-6">
                   <input
                     type="number"
-                    name="phone"
+                    name="Phone"
                     placeholder="Phone Number"
                     required
                   />
@@ -980,27 +985,41 @@
                 <div class="col-md-12">
                   <input
                     type="text"
-                    name="suject"
+                    name="Store"
                     placeholder="Your Store ID"
                     required
                   />
                 </div>
                 <div class="col-md-12">
                   <textarea
-                    name="message"
+                    name="Message"
                     placeholder="How can we help?"
                     re
                   ></textarea>
                 </div>
 
-                <div class="col-md-6 text-right">
+                <!-- <div class="col-md-6 text-right">
                   <input
                     type="submit"
                     name="submit"
                     value="Send Message"
                     class="contact-btn"
                   />
-                </div>
+                </div> -->
+                <button
+                  onclick="submitFunction()"
+                  type="submit"
+                  class="btn btn-success btn-lg mt-3"
+                  name="submit"
+                  value="Submit"
+                  style="
+                    background-color: #a0cc42;
+                    border: none;
+                    margin-left: 13px;
+                  "
+                >
+                  Submit
+                </button>
               </form>
             </div>
           </div>
@@ -1010,7 +1029,7 @@
     <!-- Contact End -->
     <!--======  Download part start ======-->
 
-    <section class="appie-download-3-area pt-90 pb-90" id="download">
+    <section class="appie-download-3-area pt-120 pb-90" id="download">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -1154,13 +1173,13 @@
       </div>
     </section>
 
-    <!--====== APPIE FOOTER PART ENDS ======-->
+    <!--======  FOOTER PART ENDS ======-->
 
-    <!--====== APPIE BACK TO TOP PART ENDS ======-->
+    <!--======  BACK TO TOP PART ENDS ======-->
     <div class="back-to-top back-to-top-5">
       <a href="#"><i class="fal fa-arrow-up"></i></a>
     </div>
-    <!--====== APPIE BACK TO TOP PART ENDS ======-->
+    <!--====== BACK TO TOP PART ENDS ======-->
 
     <!--====== jquery js ======-->
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
@@ -1188,5 +1207,6 @@
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+    <script src="./assets/js/contactform.js"></script>
   </body>
 </html>
